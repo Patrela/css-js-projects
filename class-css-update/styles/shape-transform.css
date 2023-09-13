@@ -16,26 +16,38 @@ body {
   order: 1;
 }
 #main > nav, 
+#main > section,
 #main > aside {
   flex: 0 0 20vw;
 }
 #main > nav {
-  background: #D7E8D4;
+  background: #EF8C86;
   order: 3;
 }
 #main > aside {
-  background: beige;
+  background: #FCB677;
   order: 2;
 }
+#main > section {
+  background: #FCB677;
+  order: 4;
+}
 header, footer {
-  background: yellowgreen;
+  background: #034C65;
   height: 20vh;
 }
-header, footer, article, nav, aside {
+header, footer, article, nav, aside, section {
   padding: 1em;
 }
 
-
+.input-text {
+  min-width: 60px;
+  min-height: 40px;
+  font-size: 2em;
+  padding: 5px;
+  border: 2px solid #034C65;
+  box-shadow: #0000;
+}
 .row {
   display: flex;
   min-height: 50px;
@@ -43,7 +55,7 @@ header, footer, article, nav, aside {
   align-items: center;
 }
 .button-main {
-  border: 1px solid #1ebd56;
+  border: 1px solid #034C65;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -63,6 +75,22 @@ header, footer, article, nav, aside {
 .callout-warning {border-left: 2px solid yellow;}
 .callout-danger {border-left: 2px solid red;}
 
+.shape-square{
+  width: 300px;
+  height: 300px;
+  border-radius: 0px;
+}
+
+.shape-rectangle{
+  width: 500px;
+  height: 300px;
+  border-radius: 0px;
+}
+.shape-circle{
+  width: 300px;
+  height: 300px;
+  border-radius:50%;
+}
 .color-item{
   padding: 0px; 
   margin: 5px;

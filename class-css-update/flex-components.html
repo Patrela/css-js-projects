@@ -1,7 +1,7 @@
 <!doctype html>
 <title>Dinamic Flex</title>
-<link href="./styles/components.css" rel="stylesheet">
-<script src="./components/color-grid.js"></script>
+<link href="./styles/shape-transform.css" rel="stylesheet">
+<script src="./components/shape-transform.js"></script>
 <body>
   <header>
     <h1>Alter Shapes JS - CSS</h1>
@@ -9,28 +9,46 @@
   <div id="main">
     <article>
       <h2>SHAPE</h2>
-      <div class="button-main">Start</div>
+      <div class="button-main" id="shape-main">Start</div>
     </article>
-    
+    <section>
+      <h2>SELECT SHAPE</h2>
+
+      <fieldset id="shape-selector">
+        <legend>image Shape</legend>
+        <label>
+            <input type="radio" name="shape-item" value="shape-square"> square
+        </label>
+        <label>
+            <input type="radio" name="shape-item" value="shape-rectangle"> rectangle
+        </label>
+        <label>
+            <input type="radio" name="shape-item" value="shape-circle"> circle
+        </label>
+    </fieldset>      
+    </section>      
     <nav>
-      <h2>COLOR</h2>
-      <input type="color" onchange="changeColorShape()" />
-      <hr />
+      <h2>UPDATE TEXT</h2>
+     
+      <!-- <input type="color" /> -->
+      <input type="text" class="input-text" id= "shape-text" value="Start" />
     </nav>
     <aside>
-      <h2>TEXT</h2>
-      <div class="callout callout" id="texto">text </div>
-      <div class="callout callout-info" id="texto">text info</div>
-      <div class="callout callout-danger" id="texto">text danger</div>
-      <div class="callout callout-warning" id="texto">text warning</div>
-      <div id="demo"></div>
+      <h2>SELECT COLOR</h2>
+
+      <div id="color-grid"></div>
 
     </aside>
+  
   </div>
-  <footer>Footer</footer>
+  <footer>
+    <h1>DOM Javascript access and dynamic classes</h1>
+    <i class="fa fa-quote-left" aria-hidden="true">Masterunion ©</i>
+  </footer>
   <script>
-    console.log("ejecutar texto");
-    document.getElementById("demo").innerHTML = colorContainer();    
+    document.getElementById("shape-text").addEventListener("input", textShapeUpdate);    
+    document.getElementById("shape-selector").addEventListener("click", ShapeChange);
+    document.getElementById("color-grid").innerHTML = colorContainer();    
   </script>
 </body>
 
