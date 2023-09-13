@@ -1,3 +1,7 @@
+/**
+ * Create a div with the grid for 16 hexa colors that will change the shape-main element's background
+ * @returns {string} The div with 4 rows and 4 columns
+ */
 function colorContainer() {
   //var component_text = "<div class='color-container'>";
   var component_text = "";
@@ -20,27 +24,39 @@ function colorContainer() {
   //component_text += "</div>";
 return component_text;
 }
+
+/**
+ * update element's background color
+ * @param {string} element DOM id for the shape element to change
+ * @param {string} colorValue hexa color for element's background, including # character
+ */
 function changeColorShape(element,colorValue) {
   document.getElementById(element).style.backgroundColor = colorValue;
 }
+
+/**
+ * update element's text
+ */
 function textShapeUpdate() {
   console.log(document.getElementById("shape-text").value);
   document.getElementById("shape-main").innerText= document.getElementById("shape-text").value;
 }
 
+/**
+ * select element's shape for changing the shape-main element
+ */
 function ShapeChange(){
-  let elementoActivo = document.querySelector('input[name="shape-item"]:checked');
-  if(elementoActivo) {
-    ShapeClass(elementoActivo.value);
+  let elementActive = document.querySelector('input[name="shape-item"]:checked');
+  if(elementActive) {
+    ShapeClass(elementActive.value);
   }
- /*     alert(elementoActivo.value);
-      //document.getElementById("shape-main");
-  } else {
-      alert('No hay ninún elemento activo');
-  }  */
-
 }
 
+
+/**
+ * update element's shape with classes
+ * @param {string} classValue the class name to apply for the shape element
+ */
 function ShapeClass(classValue) {
   const div = document.getElementById("shape-main");
   var shapesClasses = ["shape-square", "shape-rectangle", "shape-circle"];
