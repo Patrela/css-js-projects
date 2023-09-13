@@ -1,8 +1,8 @@
-#class-ccs-update
-transform a shape in 3 ways: 
+# class-ccs-update
+transform dynamically a shape in 3 ways: 
 1. text
 2. color
 3. shape
 
-##lenguages
+## lenguages
 `javascript` , `css`, `html`
