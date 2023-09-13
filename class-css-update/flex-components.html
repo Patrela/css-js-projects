@@ -1,0 +1,36 @@
+<!doctype html>
+<title>Dinamic Flex</title>
+<link href="./styles/components.css" rel="stylesheet">
+<script src="./components/color-grid.js"></script>
+<body>
+  <header>
+    <h1>Alter Shapes JS - CSS</h1>
+  </header>
+  <div id="main">
+    <article>
+      <h2>SHAPE</h2>
+      <div class="button-main">Start</div>
+    </article>
+    
+    <nav>
+      <h2>COLOR</h2>
+      <input type="color" onchange="changeColorShape()" />
+      <hr />
+    </nav>
+    <aside>
+      <h2>TEXT</h2>
+      <div class="callout callout" id="texto">text </div>
+      <div class="callout callout-info" id="texto">text info</div>
+      <div class="callout callout-danger" id="texto">text danger</div>
+      <div class="callout callout-warning" id="texto">text warning</div>
+      <div id="demo"></div>
+
+    </aside>
+  </div>
+  <footer>Footer</footer>
+  <script>
+    console.log("ejecutar texto");
+    document.getElementById("demo").innerHTML = colorContainer();    
+  </script>
+</body>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejilla de 3 Columnas con Bootstrap</title>
+  <!-- Agrega la referencia a Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./styles/index.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Rejilla de 3 Columnas con Bootstrap</h1>
+  
+Left aligned text on all viewport sizes.
+</div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Columna 1</h5>
+          <p class="card-text">Contenido de la columna 1.</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary active">Active item</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Item</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary disabled">Disabled item</a>
+          </div>
+          <a class="btn btn-primary btn-xxl border  border-yellow active" href="#"   role="button">Link 1</a>
+          <a class="btn btn-primary btn-sm border  border-black" href="#"   role="button">Link2</a>
+          <a class="btn btn-primary btn-sm border  border-white disabled" href="#"   role="button">Link3</a>
+
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Columna 2</h5>
+          <p class="card-text">Contenido de la columna 2.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Columna 3</h5>
+          <p class="card-text">Contenido de la columna 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 border  border-white">
+      boton <a class="btn btn-primary" href="#" role="button" width="500px">for changeButton </a>
+    
+      </div>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+</div>
+
+<!-- Agrega la referencia a Bootstrap JS y jQuery (opcional) si lo necesitas -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
